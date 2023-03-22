@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.login {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.loginList {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: #ccc;
+}
+
+.loginList ul {
+  position: absolute;
+  right: 0;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.nav {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav img {
+  width: 50px;
+  height: 20px;
+}
+
+.gnbList {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.gnbItem {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.iconList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBox {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #e7e7e7;
+}
+
+.icSearch {
+  margin: 5px;
+}
+
+.searchBox input {
+  background-color: transparent;
+  border: none;
+}
+
+.icon {
+  margin: 10px;
+  cursor: pointer;
+}
+
+
+
+
