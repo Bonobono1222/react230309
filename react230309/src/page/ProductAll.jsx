@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import ProductCard from '../component/ProductCard';
 
 
 const ProductAll = () => {
+
+  const [productList, setproductList] = useState([]);
 
   const getProducts = async () => {
       // **async await http 요청**
@@ -22,6 +25,8 @@ const ProductAll = () => {
       // response에서 json을 뽑아와라
       console.log(data);
       // 데이터 배열 잘 가져오는지 확인**
+      setproductList(data);
+      // State 변경 함수에 data값 할당
     }
 
    useEffect(() => {
@@ -30,7 +35,9 @@ const ProductAll = () => {
 
     return (
 
-    <div>ProductAll</div>
+    <div>
+      <ProductCard/>
+    </div>
   )
 }
 

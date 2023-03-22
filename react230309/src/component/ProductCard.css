@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ProductCardBox {
+  width: 450px;
+  height: 550px;
+  border: 1px solid #ebebeb;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.ProductCardBox img {
+  width: 450px;
+  height: 460px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.PCBItem1 {
+  color: rgb(197, 128, 0);
+}
