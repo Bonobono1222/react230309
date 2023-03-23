@@ -6,7 +6,7 @@
       "choice" : true,
       "title" : "나이키 에어 포스 1 '07",
       "price" : 139000,
-      "new" : true,
+      "new" : false,
       "size" : ["230", "235", "240", "245", "250"]
     },
 
@@ -36,7 +36,7 @@
       "choice" : true,
       "title" : "나이키 에어 포스 1 '07 SE",
       "price" : 139000,
-      "new" : true,
+      "new" : false,
       "size" : ["230", "235", "240", "245", "250"]
     },
 
@@ -66,14 +66,14 @@
       "choice" : true,
       "title" : "에어 조던 1 미드",
       "price" : 159000,
-      "new" : true,
+      "new" : false,
       "size" : ["230", "235", "240", "245", "250"]
     },
 
     {
       "id" : 7,
       "img" : "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/aa7a715d-3064-474c-8583-53d09bf2f0eb/%EC%97%90%EC%96%B4-%EB%A6%AC%ED%94%84%ED%8A%B8-%EC%97%AC%EC%84%B1-%EC%8B%A0%EB%B0%9C-MOHCVRR1.png",
-      "choice" : true,
+      "choice" : false,
       "title" : "나이키 에어 리프트",
       "price" : 159000,
       "new" : true,
@@ -93,10 +93,10 @@
     {
       "id" : 9,
       "img" : "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ab7764f7-358d-4492-82d8-ab43f046a598/%EC%95%84%EC%9D%B4%EC%BD%98-%ED%81%B4%EB%9E%98%EC%8B%9D-%EC%97%AC%EC%84%B1-%EC%83%8C%EB%93%A4-SYfLQosm.png",
-      "choice" : true,
+      "choice" : false,
       "title" : "나이키 아이콘 클래식",
       "price" : 69000,
-      "new" : true,
+      "new" : false,
       "size" : ["230", "235", "240", "245", "250", "260", "270", "280", "290"]
     },
 
@@ -106,7 +106,7 @@
       "choice" : true,
       "title" : "나이키코트 에어 줌 프로",
       "price" : 119000,
-      "new" : true,
+      "new" : false,
       "size" : ["220", "225", "230", "235", "240", "245", "250"]
     },
 
@@ -126,24 +126,24 @@
       "choice" : true,
       "title" : "나이키 리뉴 런 4",
       "price" : 99000,
-      "new" : true,
+      "new" : false,
       "size" : ["220", "225", "230", "235", "240", "245", "250", "255", "260"]
     },
 
     {
       "id" : 13,
       "img" : "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/8c747fda-f1fc-4116-9e06-86d1a6584bbe/%EB%B9%84%EC%8A%A4%ED%83%80-%EC%97%AC%EC%84%B1-%EC%83%8C%EB%93%A4-sKR9GZya.png",
-      "choice" : true,
+      "choice" : false,
       "title" : "나이키 비스타",
       "price" : 69000,
-      "new" : true,
+      "new" : false,
       "size" : ["220", "230", "240", "250", "260"]
     },
 
     {
       "id" : 14,
       "img" : "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/7ceed4ff-bc39-48f2-aed6-53b101ecc885/%EC%A1%B0%EB%8D%98-%EC%86%8C%ED%94%BC%EC%95%84-%EC%97%AC%EC%84%B1-%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C-y5T8cYUD.png",
-      "choice" : true,
+      "choice" : false,
       "title" : "조던 소피아",
       "price" : 99000,
       "new" : true,

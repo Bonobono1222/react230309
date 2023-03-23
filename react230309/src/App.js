@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {Routes, Route} from 'react-router-dom';
 import Login from './page/Login';
 import ProductAll from './page/ProductAll';
@@ -7,6 +8,7 @@ import ProductDetail from './page/ProductDetail';
 import Nav from './component/Nav';
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+
 
 // Router 사용 시 dom 설치, 인덱스 파일에서 <BrowserRouter>로 App 감싸주고
 // import { BrowserRouter } from "react-router-dom"; 입력해주기

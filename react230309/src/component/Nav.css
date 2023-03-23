@@ -12,12 +12,6 @@ a {
   text-decoration: none;
 }
 
-/* .login {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-} */
-
 .loginList {
   width: 100%;
   height: 40px;
@@ -28,6 +22,7 @@ a {
 
 .loginList ul {
   position: absolute;
+  top: 5px;
   right: 0;
   width: 300px;
   display: flex;
@@ -35,6 +30,17 @@ a {
   align-items: center;
   font-weight: 700;
   cursor: pointer;
+}
+
+.loginList ul li::after {
+  content: '';
+  margin: 2.5px;
+  border: 1px solid #000;
+}
+
+.loginList ul li:last-child::after {
+  content: '';
+  border: none;
 }
 
 .nav {
@@ -46,6 +52,8 @@ a {
 }
 
 .nav img {
+  position: absolute;
+  left: 50px;
   width: 50px;
   height: 20px;
 }
@@ -73,19 +81,16 @@ a {
   width: 0;
   display: block; 
   border-bottom: 3px solid #000; 
-  transition: all 250ms ease-in-out;
 }
 
 .gnbItem:hover::after {
-  transition: all 250ms ease-in-out; 
-  width: 70px;
-  margin: 0 auto;
+  width: 50px;
+  transition: all 300ms ease-in-out; 
 }
 
-
-
-
 .iconList {
+  position: absolute;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,6 +101,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: translateY(-20%);
   border-radius: 20px;
   background-color: #ebebeb;
   transition: all 300ms;
@@ -111,11 +117,13 @@ a {
 
 .searchBox input {
   background-color: transparent;
+  outline: transparent;
   border: none;
 }
 
 .icon {
   margin: 10px;
+  transform: translateY(-20%);
   cursor: pointer;
   transition: all 300ms;
 }
@@ -127,7 +135,3 @@ a {
 .icon:last-child:hover {
   color: chocolate;
 }
-
-
-
-

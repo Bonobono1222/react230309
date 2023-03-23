@@ -1,9 +1,9 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { Form, Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from 'react';
 import ProductCard from '../component/ProductCard';
-
+import { Container, Row, Col} from 'react-bootstrap';
 
 const ProductAll = () => {
 
@@ -34,10 +34,19 @@ const ProductAll = () => {
     },[]);
 
     return (
-
-    <div>
-      <ProductCard/>
-    </div>
+      <Container>
+        <Row>
+        {
+        productList.map((menu, i)=> {
+          return (
+            <Col lg = {4} >
+            <ProductCard menu={menu}/>
+            </Col>
+          )
+          })
+        }
+        </Row>
+      </Container>
   )
 }
 
