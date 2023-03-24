@@ -14,7 +14,7 @@ a {
 
 .loginList {
   width: 100%;
-  height: 40px;
+  height: 30px;
   display: flex;
   align-items: center;
   background-color: #ebebeb;
@@ -28,14 +28,14 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-weight: 700;
+  font-size: 12px;
   cursor: pointer;
 }
 
 .loginList ul li::after {
   content: '';
-  margin: 2.5px;
-  border: 1px solid #000;
+  margin: 10px;
+  border: 1px solid #6e6e6e;
 }
 
 .loginList ul li:last-child::after {
@@ -45,21 +45,19 @@ a {
 
 .nav {
   width: 100%;
-  height: 70px;
+  height: 50px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 .nav img {
-  position: absolute;
-  left: 50px;
   width: 50px;
   height: 20px;
 }
 
 .gnbList {
-  width: 50%;
+  width: 70%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -73,24 +71,24 @@ a {
 
 .gnbItem:hover {
   color: #ccc;
+  transform: translateY(3%);
 }
 
 .gnbItem::after {
-  position: absolute;
   content:"";
+  display: none;
   width: 0;
-  display: block; 
-  border-bottom: 3px solid #000; 
 }
 
 .gnbItem:hover::after {
-  width: 50px;
+  content:"";
+  display: block;
+  width: 100%;
+  border: 1px solid #000;
   transition: all 300ms ease-in-out; 
 }
 
 .iconList {
-  position: absolute;
-  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,7 +99,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(-20%);
   border-radius: 20px;
   background-color: #ebebeb;
   transition: all 300ms;

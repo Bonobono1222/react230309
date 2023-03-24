@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ProductDetailBox {
+  display: flex;
+  width: 1000px;
+  height: 700px;
+  overflow: hidden;
+  font-size: 25px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.ProductDetailBox img {
+  width: 600px;
+  height: 700px;
+  object-fit: cover;
+  margin-right: 30px;
+}
+
+.PCBItem1 {
+  color: rgb(197, 128, 0);
+}
+
+.PCBItem2 {
+  font-size: 18px;
+}
+
+.PCBItem3 {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.new {
+  color: darkorange;
+}

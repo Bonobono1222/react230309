@@ -6,8 +6,10 @@ import Login from './page/Login';
 import ProductAll from './page/ProductAll';
 import ProductDetail from './page/ProductDetail';
 import Nav from './component/Nav';
+import PrivateRoute from './route/PrivateRoute';
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from 'react';
 
 
 // Router 사용 시 dom 설치, 인덱스 파일에서 <BrowserRouter>로 App 감싸주고
@@ -20,13 +22,21 @@ import { useNavigate } from "react-router-dom";
 // 4. 로그인 하면 로그아웃 버튼이 보이고, 로그아웃 하면 로그인 버튼이 보인다.
 
 function App() {
+
+  const [userLogin, setUserLogin] = useState(false);
+  // State값이 true면 로그인이 된거고 false면 로그인이 안 된 상태
+  // 사이트 접속 했을 때는 기본값이 false 로그인 버튼을 클릭 했을 때 true로 바꿔준다.
+  useEffect(() => {
+    console.log('Login',userLogin)
+  },[userLogin]);
+
   return (
     <div className="App">
     <Nav/>
     <Routes>
       <Route path='/' element={<ProductAll/>}/>
-      <Route path='/login' element={<Login/>}/>
-      <Route path='/product/:id' element={<ProductDetail/>}/>
+      <Route path='/login' element={<Login setUserLogin={setUserLogin}/>}/>
+      <Route path='/product/:id' element={<PrivateRoute userLogin={userLogin}/>}/>
     </Routes>
     </div>
   );

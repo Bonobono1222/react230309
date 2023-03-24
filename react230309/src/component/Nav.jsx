@@ -8,7 +8,7 @@ import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import { useNavigate } from "react-router-dom";
 
 const Nav = () => {
-  const loginList = ['매장찾기', '고객찾기', '가입하기', '로그인'];
+  const loginList = ['매장찾기', '고객센터', '가입하기', '로그인'];
   // 변수 loginList에 array형태(배열)로 값을 넣어줌
   const menuList = ['New Releases', 'Men', 'Women', 'Kids', 'Sale', 'SNKRS', '나이키 앱'];
 
